@@ -56,3 +56,37 @@ body {
   width: 250px;
   height: 380px;
 }
+
+.footer-content {
+  background-color: #274c77;
+  color: white;
+  padding: 10px;
+}
+
+.footer-mentions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  margin: 0 20px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-media-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-quote {
+  font-style: italic;
+  text-align: center;
+  font-size: 10px;
+  padding: 0 10px 10px 10px;
+}
