@@ -1,0 +1,45 @@
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  margin: auto;
+  padding: 0;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+}
+
+.home-background {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.intro-text {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.service-card {
+  background: #fff;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  align-items: center;
+  width: 250px;
+  height: 380px;
+}
