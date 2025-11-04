@@ -7,6 +7,20 @@ body {
   overflow-x: hidden;
 }
 
+.header-content {
+  background-color: #274c77;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-main {
+  display: flex;
+  flex-direction: row;
+}
+
 .home-background {
   width: 100%;
   height: auto;
