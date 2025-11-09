@@ -80,6 +80,7 @@ body {
   align-items: center;
   width: 250px;
   height: 380px;
+  color: #274c77;
 }
 
 .service-card:hover {
