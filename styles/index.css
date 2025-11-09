@@ -51,6 +51,10 @@ body {
   transition: background-color 0.5s ease;
 }
 
+.contact-button:hover {
+  transform: scale(1.05);
+}
+
 .services {
   display: flex;
   flex-wrap: wrap;
@@ -67,7 +71,7 @@ body {
 
 .service-card {
   background: #fff;
-  border: 1px solid #8b8c89;
+  border: 1px solid #274c77;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin: 20px;
@@ -76,6 +80,16 @@ body {
   align-items: center;
   width: 250px;
   height: 380px;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-card h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
 }
 
 .footer-content {

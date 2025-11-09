@@ -66,8 +66,9 @@ body {
 }
 
 .work-card {
-  background: #fff;
-  border: 1px solid #8b8c89;
+  background: #274c77;
+  color: white;
+  border: 1px solid #a3cef1;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin: 20px;
@@ -76,6 +77,16 @@ body {
   align-items: center;
   width: 250px;
   height: 380px;
+}
+
+.work-card:hover {
+  transform: scale(1.05);
+}
+
+.work-card h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
 }
 
 .footer-content {
