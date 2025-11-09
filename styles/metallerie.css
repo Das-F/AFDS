@@ -1,7 +1,7 @@
 body {
   font-family: "Arial", sans-serif;
   line-height: 1.6;
-  margin: auto;
+  margin: 0;
   padding: 0;
   background-color: #e7ecef;
   overflow-x: hidden;
@@ -14,11 +14,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.header-main {
-  display: flex;
-  flex-direction: row;
 }
 
 .header-main {
@@ -56,11 +51,18 @@ body {
   transition: background-color 0.5s ease;
 }
 
-.services {
+.works {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
+}
+
+.works h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #274c77;
 }
 
 .work-card {
