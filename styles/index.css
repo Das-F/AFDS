@@ -30,20 +30,26 @@ body {
 
 .intro-text {
   position: absolute;
-  top: 73%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
   padding: 20px;
-  width: 600px;
+  width: 80vw;
+}
+
+h3 {
+  color: #274c77;
+  font-weight: bold;
+  font-size: 28px;
 }
 
 .contact-button {
   background: linear-gradient(to left top, #274c77, #6096ba);
   color: #ffffff;
   border: none;
-  margin-top: 10px;
+  margin-top: 30px;
   padding: 15px 20px;
   cursor: pointer;
   font-size: 16px;
@@ -104,8 +110,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-size: 12px;
-  margin: 0 20px;
+  font-size: 16px;
+  margin: 0 50px;
 }
 
 .footer-social {
@@ -123,6 +129,6 @@ body {
 .footer-quote {
   font-style: italic;
   text-align: center;
-  font-size: 10px;
+  font-size: 14px;
   padding: 0 10px 10px 10px;
 }
