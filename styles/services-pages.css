@@ -65,16 +65,16 @@ nav ul {
   width: 75%;
 }
 
-.icons {
+#icons {
   display: none;
   cursor: pointer;
 }
 
 @media (max-width: 768px) {
-  .icons {
+  #icons {
     display: block;
   }
-  .icons:before {
+  #icons:before {
     content: "\2630"; /* Unicode for hamburger menu */
     font-size: 30px;
     color: black;

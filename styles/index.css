@@ -51,27 +51,30 @@ nav ul {
   width: 75%;
 }
 
-.icons {
+#icons {
   display: none;
   cursor: pointer;
 }
 
 @media (max-width: 768px) {
-  .icons {
+  #icons {
     display: block;
   }
-  .icons:before {
+  #icons:before {
     content: "\2630"; /* Unicode for hamburger menu */
     font-size: 30px;
     color: black;
   }
 
+  .active #icons:before {
+    content: "\2715";
+  }
   nav ul {
     position: fixed;
-    left: -100%;
+    left: -107%;
     top: 5%;
     flex-direction: column;
-    background: skyblue;
+    background: #274c77;
     width: 100%;
     text-align: center;
     transition: right 0.25s ease-in;
@@ -81,8 +84,19 @@ nav ul {
   }
 
   nav li:hover {
-    background: rgba(68, 68, 203, 1);
+    background: skyblue;
   }
+  nav.active ul {
+    left: 0;
+    height: fit-content;
+    transition: bottom 0.25s ease-in;
+  }
+}
+
+.header-main {
+  width: 100%;
+  height: 10vh;
+  background: #e7ecef;
 }
 
 .home-background {
