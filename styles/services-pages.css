@@ -21,6 +21,84 @@ body {
   flex-direction: row;
 }
 
+/* Nav Bar */
+
+.banner {
+  background-color: #274c77;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1rem, calc(1rem + 1vw), 1.6rem);
+}
+
+li {
+  list-style-type: none;
+  padding: 0 10px;
+}
+
+a,
+a:visited {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: clamp(0.65rem, calc(0.5rem + 0.9vw), 0.8rem);
+}
+
+a:hover {
+  color: #6096ba;
+}
+
+nav {
+  background: #274c77;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: clamp(0.65rem, calc(0.5rem + 0.9vw), 0.95rem);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.icons {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .icons {
+    display: block;
+  }
+  .icons:before {
+    content: "\2630"; /* Unicode for hamburger menu */
+    font-size: 30px;
+    color: black;
+  }
+
+  nav ul {
+    position: fixed;
+    left: -100%;
+    top: 5%;
+    flex-direction: column;
+    background: skyblue;
+    width: 100%;
+    text-align: center;
+    transition: right 0.25s ease-in;
+  }
+  nav li {
+    padding: 3px 0;
+  }
+
+  nav li:hover {
+    background: rgba(68, 68, 203, 1);
+  }
+}
+
 .metal-background {
   width: 100%;
   height: auto;

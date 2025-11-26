@@ -107,6 +107,12 @@ nav ul {
   z-index: 2;
 }
 
+h4 {
+  font-weight: normal;
+  margin: 35px 0;
+  font-size: clamp(1rem, calc(1rem + 0.4vw), 1.2rem);
+}
+
 .background-img::before {
   content: "";
   position: absolute;
