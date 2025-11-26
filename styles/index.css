@@ -161,6 +161,13 @@ h3 {
   color: #274c77;
 }
 
+.services a {
+  text-decoration: none;
+  text-transform: none;
+  font-size: inherit;
+  color: inherit;
+}
+
 .service-card {
   background: #fff;
   border: 1px solid #274c77;
