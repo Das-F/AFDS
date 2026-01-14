@@ -397,6 +397,9 @@ h4 {
   background-color: #1f3a5f;
   color: #e7ecef;
   width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
 }
 
 .footer-links {
