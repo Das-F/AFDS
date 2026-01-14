@@ -233,7 +233,7 @@ h4 {
   padding: 40px 20px;
   text-align: center;
   align-items: center;
-  margin: 20px auto;
+  margin: auto;
   padding: 20px 30px;
 }
 
@@ -329,12 +329,11 @@ h4 {
 }
 
 .footer-highlight {
-  background-color: #e7ecef;
+  background-color: #a3cef1;
   color: #274c77;
   width: 100%;
   text-align: center;
   padding: 15px 10px;
-  margin-bottom: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -344,6 +343,7 @@ h4 {
 
 .footer-highlight h3 {
   margin: 0 0 5px 0;
+  font-size: 20px;
 }
 
 .footer-highlight p {
