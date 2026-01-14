@@ -27,6 +27,7 @@ body {
   margin: 0;
   padding: 0;
   align-items: center;
+  font-size: clamp(0.8rem, calc(0.7rem + 0.5vw), 1rem);
   flex: 1;
   justify-content: space-evenly;
   max-width: 1200px;
@@ -232,7 +233,7 @@ h4 {
   padding: 40px 20px;
   text-align: center;
   align-items: center;
-  margin: 40px auto;
+  margin: 20px auto;
   padding: 20px 30px;
 }
 
@@ -319,13 +320,65 @@ h4 {
 
 /* Footer */
 .footer-content {
-  background-color: #6096ba;
   color: white;
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.footer-highlight {
+  background-color: #e7ecef;
+  color: #274c77;
+  width: 100%;
+  text-align: center;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-highlight h3 {
+  margin: 0 0 5px 0;
+}
+
+.footer-highlight p {
+  font-size: 15px;
+  margin: 0 0 5px 0;
+  color: black;
+}
+
+.footer-highlight address {
+  font-style: normal;
+}
+
+.footer-cta {
+  background-color: #e76f51;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 6px 0 12px 0;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.footer-cta:hover {
+  background-color: #d85c42;
+  transform: scale(1.02);
+}
+
+.footer-cta:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(39, 76, 119, 0.25);
+  outline: 3px solid #a3cef1;
+  outline-offset: 3px;
 }
 
 .footer-social {
@@ -340,8 +393,15 @@ h4 {
   height: 20px;
 }
 
+.footer-nav {
+  background-color: #1f3a5f;
+  color: #e7ecef;
+  width: 100%;
+}
+
 .footer-links {
   list-style: none;
+  width: 100%;
   display: flex;
   justify-content: center;
   padding: 0;
@@ -350,7 +410,6 @@ h4 {
 }
 
 .footer-link {
-  color: #fff;
   text-decoration: none;
   margin: 0 10px;
   display: inline-block;
@@ -365,5 +424,16 @@ h4 {
   font-style: italic;
   text-align: center;
   font-size: 14px;
-  padding: 0 10px 10px 10px;
+  padding: 0 10px 5px 10px;
+}
+
+.footer-quote a {
+  text-decoration: none;
+  text-transform: none;
+  color: inherit;
+}
+
+.footer-quote a:hover,
+.footer-quote a:focus-visible {
+  text-decoration: underline;
 }
