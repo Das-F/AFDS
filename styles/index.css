@@ -341,7 +341,6 @@ h4 {
 /* Footer */
 .footer-content {
   color: white;
-  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -406,18 +405,33 @@ h4 {
   flex-direction: row;
   align-items: center;
   text-align: center;
-  gap: 5px;
+  gap: 6px;
 }
 
 .footer-social p {
-  margin: 0 0 5px 0;
+  margin: 0 8px 0 0;
   font-size: 15px;
   color: #e7ecef;
+  white-space: nowrap;
+  display: inline-block;
 }
 
 .social-media-icon {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  gap: 6px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.social-list li {
+  margin: 0;
 }
 
 .footer-nav {
@@ -459,12 +473,14 @@ h4 {
 .footer-quote {
   font-style: italic;
   text-align: center;
+
   font-size: 14px;
   padding: 0 10px 5px 10px;
 }
 
 .footer-quote p {
   margin: 5px 0;
+  color: #e7ecef;
 }
 
 .footer-quote a {
