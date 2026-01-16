@@ -360,31 +360,119 @@ h4 {
   overflow: hidden;
 }
 
-.carousel-track {
+.carrousel-track-container {
+  width: 100%;
+  max-width: 1020px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.carrousel-track {
   display: flex;
 }
 
-.carousel-slide {
+.carrousel-slide {
   min-width: 100%;
 }
 
-.carousel-button {
+.carrousel-button {
   position: absolute;
   top: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #1f3a5f;
   color: white;
   border: none;
   padding: 10px;
   cursor: pointer;
   transform: translateY(-50%);
-  z-index: 1;
+  z-index: 5;
 }
 
-.carousel-button.prev {
+.carrousel-button.prev-button {
   left: 10px;
 }
-.carousel-button.next {
+
+.carrousel-button.next-button {
   right: 10px;
+}
+
+.carrousel-arrow-right,
+.carrousel-arrow-left {
+  width: 24px;
+  height: 24px;
+  display: block;
+  color: white;
+}
+
+.carrousel-track {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  transition: transform 0.35s ease;
+  will-change: transform;
+}
+
+.carrousel-track-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.carrousel-slide {
+  flex: 0 0 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.carrousel-slide:not(.current-slide) {
+  transform: scale(0.86);
+  opacity: 0.95;
+}
+
+.carrousel-slide.current-slide {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.carrousel-slide img {
+  width: auto;
+  max-width: 380px;
+  height: auto;
+  max-height: 420px;
+  display: block;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.carrousel-button svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.carrousel-track-container .carrousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  padding: 8px;
+  z-index: 10;
+}
+
+.carrousel-track-container .carrousel-button.prev-button {
+  left: 8px;
+}
+.carrousel-track-container .carrousel-button.next-button {
+  right: 8px;
+}
+
+.carrousel-track-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.carrousel-track-container::-webkit-scrollbar {
+  display: none;
 }
 
 /* Footer */
