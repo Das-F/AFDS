@@ -180,7 +180,10 @@ nav ul {
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  transition:
+    background-color 0.25s ease,
+    transform 0.2s ease,
+    box-shadow 0.25s ease;
 }
 
 .cta:hover,
@@ -422,7 +425,9 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.35s ease, opacity 0.35s ease;
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease;
 }
 
 .carrousel-slide:not(.current-slide) {
@@ -628,5 +633,39 @@ h4 {
 
 .footer-quote a:hover,
 .footer-quote a:focus-visible {
+  text-decoration: underline;
+}
+
+/* Mentions légales */
+
+.legal {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.legal h2,
+.legal h3 {
+  padding: 0;
+  margin: 25px 0 5px 0;
+}
+
+.legal p {
+  padding: 0;
+  margin: 0;
+}
+
+.legal a {
+  color: #274c77;
+  text-decoration: none;
+  text-transform: none;
+  font-size: inherit;
+}
+
+.legal a:hover,
+.legal a:focus-visible {
   text-decoration: underline;
 }
