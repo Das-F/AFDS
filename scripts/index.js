@@ -2,8 +2,27 @@ const links = document.querySelectorAll("nav li");
 const nav = document.querySelector("nav");
 const icons = document.getElementById("icons");
 
+function updateMobileNavTop() {
+  const ul = nav && nav.querySelector("ul");
+  if (!ul) return;
+  // prefer the banner element if present, otherwise use the nav's bottom
+  const banner = document.querySelector(".banner") || document.querySelector(".header");
+  const topValue = banner ? Math.ceil(banner.getBoundingClientRect().bottom) : Math.ceil(nav.getBoundingClientRect().bottom);
+  ul.style.top = `${topValue}px`;
+}
+
+// set initial position and update on resize
+updateMobileNavTop();
+window.addEventListener("resize", () => {
+  // small debounce
+  clearTimeout(window.__updateMobileNavTopTimeout);
+  window.__updateMobileNavTopTimeout = setTimeout(updateMobileNavTop, 80);
+});
+
 icons.addEventListener("click", () => {
   nav.classList.toggle("active");
+  // ensure top is updated when opening the menu
+  setTimeout(updateMobileNavTop, 10);
 });
 
 links.forEach((link) => {
