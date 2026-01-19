@@ -222,6 +222,7 @@ nav ul {
 
 h2 {
   font-weight: bold;
+  margin-top: 30px;
   margin-bottom: 20px;
   color: #1f3a5f;
   font-size: 32px;
@@ -265,6 +266,7 @@ h4 {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .services-list p {
@@ -536,6 +538,7 @@ h4 {
   border: none;
   padding: 10px 20px;
   font-size: 15px;
+  font-weight: 600;
   border-radius: 5px;
   cursor: pointer;
   margin: 6px 0 12px 0;
