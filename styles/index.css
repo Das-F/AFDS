@@ -82,7 +82,7 @@ nav ul {
   #icons:before {
     content: "\2630"; /* Unicode for hamburger menu */
     font-size: 30px;
-    color: black;
+    color: #ffffff;
   }
 
   .active #icons:before {
@@ -137,6 +137,8 @@ nav ul {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  position: relative;
+  min-height: 600px;
 }
 
 .header::before {
@@ -145,10 +147,6 @@ nav ul {
   inset: 0;
   background: rgba(0, 0, 0, 0.25);
   z-index: 0;
-}
-
-.header-overlay {
-  display: none;
 }
 
 .header-text {
@@ -172,6 +170,13 @@ nav ul {
 .header-text h1 {
   font-size: 4.5rem;
   margin: 10px;
+}
+
+.header-text h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 10px 0;
+  color: #fff;
 }
 
 .header-text p {
@@ -209,7 +214,7 @@ nav ul {
 /* About */
 .about-section {
   background-color: #e7ecef;
-  padding: 20px;
+  padding: 40px 30px;
   text-align: center;
   position: relative;
   z-index: 2;
@@ -261,7 +266,7 @@ h4 {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
-  margin-bottom: 35px;
+  margin-bottom: 45px;
 }
 
 .services-list p {
@@ -627,7 +632,8 @@ h4 {
 .footer-quote {
   text-align: center;
   padding: 0 10px 5px 10px;
-  font-size: 15px;
+  font-size: 14px;
+  opacity: 0.8;
 }
 
 .footer-quote p {
