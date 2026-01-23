@@ -915,3 +915,40 @@ h4 {
     padding: 6px 12px;
   }
 }
+
+/* Page 404 */
+
+.card-404 {
+  background-color: #ffffff;
+  border: 2px solid #a3cef1;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.error-404-img {
+  max-width: 500px;
+  width: 80%;
+  height: auto;
+  margin: 20px 0;
+}
+
+.btn-404 {
+  background-color: #6096ba;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.25s ease,
+    transform 0.2s ease,
+    box-shadow 0.25s ease;
+  text-decoration: none;
+  display: inline-block;
+}
