@@ -139,7 +139,7 @@ nav ul {
   position: relative;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/Fond-1.png");
+  background-image: url("/assets/Fond-1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -207,6 +207,7 @@ nav ul {
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+  letter-spacing: 0.5px;
   transition:
     background-color 0.25s ease,
     transform 0.2s ease,
@@ -630,6 +631,7 @@ h4 {
   margin: 6px 0 12px 0;
   text-decoration: none;
   display: inline-block;
+  letter-spacing: 0.5px;
 }
 
 .footer-cta:hover {
