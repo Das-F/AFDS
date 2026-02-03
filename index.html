@@ -20,63 +20,137 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "image": ["https://aferdestyle.fr/assets/nos-realisations/metallerie/Metallerie-001.jpg", "https://aferdestyle.fr/assets/nos-realisations/serrurerie/Serrurerie-005.jpg", "https://aferdestyle.fr/assets/nos-realisations/electricite/Electricite-004.jpg", "https://aferdestyle.fr/assets/nos-realisations/automatisme/Automatisme-001.jpg"],
-        "name": "A Fer De Style",
-        "url": "https://aferdestyle.fr",
-        "email": "labrette.geoffrey@hotmail.fr",
-        "telephone": "+33603312962",
-        "openingHours": "Mo-Fr 08:00-18:00",
-        "areaServed": [
+        "@graph": [
           {
-            "@type": "Place",
-            "name": "Blois"
+            "@type": "ProfessionalService",
+            "@id": "https://aferdestyle.fr/#professionalservice",
+            "name": "A Fer De Style",
+            "description": "Artisan métallier, serrurier, électricien et automaticien à Blois et alentours. Créations sur mesure, dépannage rapide et devis gratuit.",
+            "url": "https://aferdestyle.fr",
+            "logo": "https://aferdestyle.fr/assets/logo-afds-og.png",
+            "image": ["https://aferdestyle.fr/assets/nos-realisations/metallerie/Metallerie-001.jpg", "https://aferdestyle.fr/assets/nos-realisations/serrurerie/Serrurerie-005.jpg", "https://aferdestyle.fr/assets/nos-realisations/electricite/Electricite-004.jpg", "https://aferdestyle.fr/assets/nos-realisations/automatisme/Automatisme-001.jpg"],
+            "email": "labrette.geoffrey@hotmail.fr",
+            "telephone": "+33603312962",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "8 impasse de Beauvais",
+              "addressLocality": "Huisseau-sur-Cosson",
+              "postalCode": "41350",
+              "addressCountry": "FR"
+            },
+            "areaServed": [
+              { "@type": "Place", "name": "Blois" },
+              { "@type": "Place", "name": "Huisseau-sur-Cosson" },
+              { "@type": "Place", "name": "Maslives" },
+              { "@type": "Place", "name": "Montlivault" },
+              { "@type": "Place", "name": "Vineuil" },
+              { "@type": "Place", "name": "Saint-Gervais-la-Forêt" },
+              { "@type": "Place", "name": "Cellettes" },
+              { "@type": "Place", "name": "Saint-Sulpice-de-Pommeray" },
+              { "@type": "Place", "name": "La Chaussée-Saint-Victor" },
+              { "@type": "AdministrativeArea", "name": "Loir-et-Cher" }
+            ],
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "08:00",
+              "closes": "18:00"
+            },
+            "sameAs": ["https://www.facebook.com/a.fer.de.style/", "https://www.instagram.com/aferdestyle/"],
+            "founder": {
+              "@id": "https://aferdestyle.fr/#person"
+            },
+            "makesOffer": [
+              {
+                "@type": "Service",
+                "name": "Métallerie",
+                "description": "Fabrication et réparation d’éléments métalliques sur mesure.",
+                "url": "https://aferdestyle.fr/services/metallerie/",
+                "image": "https://aferdestyle.fr/assets/nos-realisations/metallerie/Metallerie-001.jpg",
+                "hasOfferCatalog": {
+                  "@type": "OfferCatalog",
+                  "name": "Prestations Métallerie",
+                  "itemListElement": [
+                    {
+                      "@type": "Offer",
+                      "itemOffered": { "@type": "Service", "name": "Portillons sur mesure" }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": { "@type": "Service", "name": "Garde-corps et rampes" }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": { "@type": "Service", "name": "Escaliers métalliques" }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": { "@type": "Service", "name": "Sécurisation puits et soupiraux" }
+                    }
+                  ]
+                }
+              },
+              {
+                "@type": "Service",
+                "name": "Serrurerie",
+                "description": "Installation, maintenance et dépannage de serrures.",
+                "url": "https://aferdestyle.fr/services/serrurerie/",
+                "image": "https://aferdestyle.fr/assets/nos-realisations/serrurerie/Serrurerie-005.jpg",
+                "hasOfferCatalog": {
+                  "@type": "OfferCatalog",
+                  "name": "Prestations Serrurerie",
+                  "itemListElement": [
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Installation de serrures" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Réparation de serrures" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mise en sécurité domicile ou entreprise" } }
+                  ]
+                }
+              },
+              {
+                "@type": "Service",
+                "name": "Électricité",
+                "description": "Travaux électriques neufs, rénovation et dépannage.",
+                "url": "https://aferdestyle.fr/services/electricite/",
+                "image": "https://aferdestyle.fr/assets/nos-realisations/electricite/Electricite-004.jpg",
+                "hasOfferCatalog": {
+                  "@type": "OfferCatalog",
+                  "name": "Prestations Électricité",
+                  "itemListElement": [
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mise aux normes électriques" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Installation systèmes d’éclairage" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dépannage et réparations" } }
+                  ]
+                }
+              },
+              {
+                "@type": "Service",
+                "name": "Automatismes",
+                "description": "Installation et maintenance de systèmes motorisés.",
+                "url": "https://aferdestyle.fr/services/automatisme/",
+                "image": "https://aferdestyle.fr/assets/nos-realisations/automatisme/Automatisme-001.jpg",
+                "hasOfferCatalog": {
+                  "@type": "OfferCatalog",
+                  "name": "Prestations Automatismes",
+                  "itemListElement": [
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Portails motorisés" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Portes de garage automatiques" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Volets et rideaux métalliques motorisés" } }
+                  ]
+                }
+              }
+            ]
           },
           {
-            "@type": "Place",
-            "name": "Huisseau-sur-Cosson"
-          },
-          {
-            "@type": "Place",
-            "name": "Maslives"
-          },
-          {
-            "@type": "Place",
-            "name": "Montlivault"
-          },
-          {
-            "@type": "Place",
-            "name": "Vineuil"
-          },
-          {
-            "@type": "Place",
-            "name": "Saint-Gervais-la-Forêt"
-          },
-          {
-            "@type": "Place",
-            "name": "Cellettes"
-          },
-          {
-            "@type": "Place",
-            "name": "Saint-Sulpice-de-Pommeray"
-          },
-          {
-            "@type": "Place",
-            "name": "La Chaussée-Saint-Victor"
-          },
-          {
-            "@type": "AdministrativeArea",
-            "name": "Loir-et-Cher"
+            "@type": "Person",
+            "@id": "https://aferdestyle.fr/#person",
+            "name": "Geoffrey Labrette",
+            "jobTitle": "Gérant / Artisan Métallier-Serrurier-Électricien",
+            "url": "https://aferdestyle.fr",
+            "worksFor": {
+              "@id": "https://aferdestyle.fr/#professionalservice"
+            }
           }
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "8 impasse de Beauvais",
-          "addressLocality": "Huisseau-sur-Cosson",
-          "postalCode": "41350",
-          "addressCountry": "FR"
-        },
-        "sameAs": ["https://www.facebook.com/a.fer.de.style/", "https://www.instagram.com/aferdestyle/"]
+        ]
       }
     </script>
   </head>
@@ -92,7 +166,6 @@
           <li><a href="/services/automatisme/">Automatismes</a></li>
           <li><a href="/contact/">Contact</a></li>
         </ul>
-        <div id="icons" class="icons"></div>
       </nav>
     </div>
 
@@ -129,7 +202,7 @@
             <div class="learn-more">
               <a href="/services/metallerie/" class="service-link" title="Métallerie — En savoir plus">
                 <span>En savoir plus</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="learn-more-arrow-right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="learn-more-arrow-right" role="img" aria-hidden="true">
                   <path d="M5 12h14" />
                   <path d="m12 5 7 7-7 7" />
                 </svg>
@@ -145,7 +218,7 @@
             <div class="learn-more">
               <a href="/services/serrurerie/" class="service-link" title="Serrurerie — En savoir plus">
                 <span>En savoir plus</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="learn-more-arrow-right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="learn-more-arrow-right" role="img" aria-hidden="true">
                   <path d="M5 12h14" />
                   <path d="m12 5 7 7-7 7" />
                 </svg>
@@ -161,7 +234,7 @@
             <div class="learn-more">
               <a href="/services/electricite/" class="service-link" title="Électricité — En savoir plus">
                 <span>En savoir plus</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="learn-more-arrow-right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="learn-more-arrow-right" role="img" aria-hidden="true">
                   <path d="M5 12h14" />
                   <path d="m12 5 7 7-7 7" />
                 </svg>
@@ -177,7 +250,7 @@
             <div class="learn-more">
               <a href="/services/automatisme/" class="service-link" title="Automatismes — En savoir plus">
                 <span>En savoir plus</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="learn-more-arrow-right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="learn-more-arrow-right" role="img" aria-hidden="true">
                   <path d="M5 12h14" />
                   <path d="m12 5 7 7-7 7" />
                 </svg>
@@ -197,28 +270,28 @@
               <path d="m12 19-7-7 7-7" />
             </svg>
           </button>
-          <ul class="carrousel-track">
-            <li class="carrousel-slide current-slide"><img src="/assets/nos-realisations/electricite/Electricite-005.jpg" alt="Raccordement électrique d'un robot tondeuse Loir et Cher" /></li>
-            <li class="carrousel-slide"><img src="/assets/nos-realisations/metallerie/Metallerie-016.jpg" alt="Réalisation d'une main courante à Huisseau-sur-Cosson" /></li>
-            <li class="carrousel-slide"><img src="/assets/nos-realisations/serrurerie/Serrurerie-003.jpg" alt="Dépannage d'une clé cassée dans une serrure à Vineuil" /></li>
-            <li class="carrousel-slide"><img src="/assets/nos-realisations/automatisme/Automatisme-001.jpg" alt="Dépannage d'un volet roulant à Blois" /></li>
-            <li class="carrousel-slide"><img src="/assets/nos-realisations/electricite/Electricite-001.jpg" alt="Dépannage d'un tableau électrique à Bracieux" /></li>
-            <li class="carrousel-slide"><img src="/assets/nos-realisations/automatisme/Automatisme-002.jpg" alt="Remplacement du moteur d'un volet roulant à Chailles" /></li>
-            <li class="carrousel-slide"><img src="/assets/nos-realisations/metallerie/Metallerie-005.jpg" alt="Réalisation d'arches pour une roseraie à Chouzy-sur-Cisse" /></li>
-            <li class="carrousel-slide"><img src="/assets/nos-realisations/metallerie/Metallerie-001.jpg" alt="Réalisation d'un portillon pour sécuriser une descente de cave à Cellettes" /></li>
-            <li class="carrousel-slide"><img src="/assets/nos-realisations/serrurerie/Serrurerie-009.jpg" alt="Mise en sécurité d'une porte après effraction à La Ferté Saint Cyr" /></li>
-            <li class="carrousel-slide"><img src="/assets/nos-realisations/metallerie/Metallerie-010.jpg" alt="Réalisation d'une montgolfière pour une décoration extérieure à Saint-Sulpice-de-Pommeray" /></li>
-            <li class="carrousel-slide"><img src="/assets/nos-realisations/electricite/Electricite-004.jpg" alt="Mise aux normes d'un tableau électrique à Blois" /></li>
-            <li class="carrousel-slide"><img src="/assets/nos-realisations/metallerie/Metallerie-002.jpg" alt="Adaptation d'une pergola pour préserver la terrasse en travertin à Blois" /></li>
-            <li class="carrousel-slide"><img src="/assets/nos-realisations/metallerie/Metallerie-018.jpg" alt="Réalisation d'un escalier métallique sur mesure à Huisseau-sur-Cosson" /></li>
-            <li class="carrousel-slide"><img src="/assets/nos-realisations/serrurerie/Serrurerie-001.jpg" alt="Ouverture d'une porte à Saint-Gervais-la-Forêt" /></li>
-            <li class="carrousel-slide"><img src="/assets/nos-realisations/automatisme/Automatisme-005.jpg" alt="Installation d'un automatisme pour portail battant à Huisseau-sur-Cosson" /></li>
-            <li class="carrousel-slide"><img src="/assets/nos-realisations/metallerie/Metallerie-012.jpg" alt="Réalisation et installation d'une croix de chaînage Loir-et-Cher" /></li>
-            <li class="carrousel-slide"><img src="/assets/nos-realisations/metallerie/Metallerie-008.jpg" alt="Réalisation d'une table de rempotage amovible à Blois" /></li>
-            <li class="carrousel-slide"><img src="/assets/nos-realisations/electricite/Electricite-007.jpg" alt="Dépannage d'un tableau électrique Loir-et-Cher" /></li>
-            <li class="carrousel-slide"><img src="/assets/nos-realisations/metallerie/Metallerie-020.jpg" alt="Réalisation et installation d'un soupirail métallique sur mesure à Huisseau-sur-Cosson" /></li>
-            <li class="carrousel-slide"><img src="/assets/nos-realisations/metallerie/Metallerie-017.jpg" alt="Réalisation d'un escalier métallique sur mesure" /></li>
-            <li class="carrousel-slide"><img src="/assets/nos-realisations/automatisme/Automatisme-006.jpg" alt="Installation de domotique pour ouvrir le portail automatique à distance à Huisseau-sur-Cosson" /></li>
+          <ul class="carrousel-track" role="list" aria-live="polite">
+            <li class="carrousel-slide current-slide" tabindex="0"><img src="/assets/nos-realisations/electricite/Electricite-005.jpg" alt="Raccordement électrique d'un robot tondeuse Loir et Cher" loading="lazy" /></li>
+            <li class="carrousel-slide" tabindex="0"><img src="/assets/nos-realisations/metallerie/Metallerie-016.jpg" alt="Réalisation d'une main courante à Huisseau-sur-Cosson" loading="lazy" /></li>
+            <li class="carrousel-slide" tabindex="0"><img src="/assets/nos-realisations/serrurerie/Serrurerie-003.jpg" alt="Dépannage d'une clé cassée dans une serrure à Vineuil" loading="lazy" /></li>
+            <li class="carrousel-slide" tabindex="0"><img src="/assets/nos-realisations/automatisme/Automatisme-001.jpg" alt="Dépannage d'un volet roulant à Blois" loading="lazy" /></li>
+            <li class="carrousel-slide" tabindex="0"><img src="/assets/nos-realisations/electricite/Electricite-001.jpg" alt="Dépannage d'un tableau électrique à Bracieux" loading="lazy" /></li>
+            <li class="carrousel-slide" tabindex="0"><img src="/assets/nos-realisations/automatisme/Automatisme-002.jpg" alt="Remplacement du moteur d'un volet roulant à Chailles" loading="lazy" /></li>
+            <li class="carrousel-slide" tabindex="0"><img src="/assets/nos-realisations/metallerie/Metallerie-005.jpg" alt="Réalisation d'arches pour une roseraie à Chouzy-sur-Cisse" loading="lazy" /></li>
+            <li class="carrousel-slide" tabindex="0"><img src="/assets/nos-realisations/metallerie/Metallerie-001.jpg" alt="Réalisation d'un portillon pour sécuriser une descente de cave à Cellettes" loading="lazy" /></li>
+            <li class="carrousel-slide" tabindex="0"><img src="/assets/nos-realisations/serrurerie/Serrurerie-009.jpg" alt="Mise en sécurité d'une porte après effraction à La Ferté Saint Cyr" loading="lazy" /></li>
+            <li class="carrousel-slide" tabindex="0"><img src="/assets/nos-realisations/metallerie/Metallerie-010.jpg" alt="Réalisation d'une montgolfière pour une décoration extérieure à Saint-Sulpice-de-Pommeray" loading="lazy" /></li>
+            <li class="carrousel-slide" tabindex="0"><img src="/assets/nos-realisations/electricite/Electricite-004.jpg" alt="Mise aux normes d'un tableau électrique à Blois" loading="lazy" /></li>
+            <li class="carrousel-slide" tabindex="0"><img src="/assets/nos-realisations/metallerie/Metallerie-002.jpg" alt="Adaptation d'une pergola pour préserver la terrasse en travertin à Blois" loading="lazy" /></li>
+            <li class="carrousel-slide" tabindex="0"><img src="/assets/nos-realisations/metallerie/Metallerie-018.jpg" alt="Réalisation d'un escalier métallique sur mesure à Huisseau-sur-Cosson" loading="lazy" /></li>
+            <li class="carrousel-slide" tabindex="0"><img src="/assets/nos-realisations/serrurerie/Serrurerie-001.jpg" alt="Ouverture d'une porte à Saint-Gervais-la-Forêt" loading="lazy" /></li>
+            <li class="carrousel-slide" tabindex="0"><img src="/assets/nos-realisations/automatisme/Automatisme-005.jpg" alt="Installation d'un automatisme pour portail battant à Huisseau-sur-Cosson" loading="lazy" /></li>
+            <li class="carrousel-slide" tabindex="0"><img src="/assets/nos-realisations/metallerie/Metallerie-012.jpg" alt="Réalisation et installation d'une croix de chaînage Loir-et-Cher" loading="lazy" /></li>
+            <li class="carrousel-slide" tabindex="0"><img src="/assets/nos-realisations/metallerie/Metallerie-008.jpg" alt="Réalisation d'une table de rempotage amovible à Blois" loading="lazy" /></li>
+            <li class="carrousel-slide" tabindex="0"><img src="/assets/nos-realisations/electricite/Electricite-007.jpg" alt="Dépannage d'un tableau électrique Loir-et-Cher" loading="lazy" /></li>
+            <li class="carrousel-slide" tabindex="0"><img src="/assets/nos-realisations/metallerie/Metallerie-020.jpg" alt="Réalisation et installation d'un soupirail métallique sur mesure à Huisseau-sur-Cosson" loading="lazy" /></li>
+            <li class="carrousel-slide" tabindex="0"><img src="/assets/nos-realisations/metallerie/Metallerie-017.jpg" alt="Réalisation d'un escalier métallique sur mesure" loading="lazy" /></li>
+            <li class="carrousel-slide" tabindex="0"><img src="/assets/nos-realisations/automatisme/Automatisme-006.jpg" alt="Installation de domotique pour ouvrir le portail automatique à distance à Huisseau-sur-Cosson" loading="lazy" /></li>
           </ul>
           <button class="carrousel-button next-button" aria-label="Voir la réalisation suivante">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="carrousel-arrow-right">
@@ -243,12 +316,12 @@
             <ul class="social-list">
               <li>
                 <a href="https://www.facebook.com/a.fer.de.style/">
-                  <img class="social-media-icon" src="/assets/Social-medias/Fb.png" alt="Facebook A Fer De Style" />
+                  <img class="social-media-icon" src="/assets/Social-medias/Fb.png" alt="Facebook A Fer De Style" rel="noopener" target="_blank" />
                 </a>
               </li>
               <li>
                 <a href="https://www.instagram.com/aferdestyle/">
-                  <img class="social-media-icon" src="/assets/Social-medias/insta.png" alt="Instagram A Fer De Style" />
+                  <img class="social-media-icon" src="/assets/Social-medias/insta.png" alt="Instagram A Fer De Style" rel="noopener" target="_blank" />
                 </a>
               </li>
             </ul>
@@ -288,6 +361,6 @@
         </button>
       </div>
     </div>
-    <script src="/scripts/index.js"></script>
+    <script src="/scripts/index.js" defer></script>
   </body>
 </html>
