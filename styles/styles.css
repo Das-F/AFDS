@@ -605,7 +605,7 @@ h4 {
 @media (max-width: 600px) {
   .lightbox-img {
     width: min(92vw, 420px);
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 1 / 1;
   }
 }
 .lightbox-close,
