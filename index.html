@@ -22,8 +22,8 @@
         "@context": "https://schema.org",
         "@graph": [
           {
-            "@type": "ProfessionalService",
-            "@id": "https://aferdestyle.fr/#professionalservice",
+            "@type": "LocalBusiness",
+            "@id": "https://aferdestyle.fr/#localbusiness",
             "name": "A Fer De Style",
             "description": "Artisan métallier, serrurier, électricien et automaticien à Blois et alentours. Créations sur mesure, dépannage rapide et devis gratuit.",
             "url": "https://aferdestyle.fr",
@@ -38,7 +38,12 @@
               "postalCode": "41350",
               "addressCountry": "FR"
             },
-            "areaServed": [
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "47.6087763498271",
+              "longitude": "1.47153697554106"
+            },
+            "serviceArea": [
               { "@type": "Place", "name": "Blois" },
               { "@type": "Place", "name": "Huisseau-sur-Cosson" },
               { "@type": "Place", "name": "Maslives" },
@@ -147,7 +152,7 @@
             "jobTitle": "Gérant / Artisan Métallier-Serrurier-Électricien",
             "url": "https://aferdestyle.fr",
             "worksFor": {
-              "@id": "https://aferdestyle.fr/#professionalservice"
+              "@id": "https://aferdestyle.fr/#localbusiness"
             }
           }
         ]
