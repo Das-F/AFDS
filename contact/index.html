@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Contactez A Fer De Style pour un devis, une question ou une visite à Blois et alentours." />
     <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/contact.css" />
     <title>Contact | A Fer De Style</title>
     <link rel="canonical" href="https://aferdestyle.fr/contact/" />
   </head>
@@ -29,7 +30,7 @@
       <div class="header-text">
         <h1 class="main-title">Contact</h1>
         <p class="subtitle">Questions, devis ou rendez-vous — nous sommes à votre écoute</p>
-        <a class="cta" href="mailto:labrette.geoffrey@hotmail.fr" aria-label="Contacter A Fer De Style">Obtenir un devis gratuit</a>
+        <a class="cta" href="mailto:contact@aferdestyle.fr" aria-label="Contacter A Fer De Style">Obtenir un devis gratuit</a>
       </div>
     </header>
 
@@ -42,18 +43,37 @@
             <div class="form" aria-label="Contact actions">
               <p>Pour un devis ou une question, écrivez-nous ou appelez-nous :</p>
               <div class="form-actions">
-                <a class="cta" href="mailto:labrette.geoffrey@hotmail.fr">Envoyer un email</a>
+                <a class="cta" href="mailto:contact@aferdestyle.fr">Envoyer un email</a>
                 <a class="cta secondary" href="tel:+33603312962">Appeler</a>
               </div>
             </div>
           </div>
 
-          <aside class="contact-details" aria-label="Coordonnées">
+          <section class="contact-details" aria-label="Coordonnées">
             <h3>Nos coordonnées</h3>
             <p><strong>Téléphone :</strong> <a href="tel:+33603312962">+33 6 03 31 29 62</a></p>
-            <p><strong>Email :</strong> <a href="mailto:labrette.geoffrey@hotmail.fr">labrette.geoffrey@hotmail.fr</a></p>
+            <p><strong>Email :</strong> <a href="mailto:contact@aferdestyle.fr">contact@aferdestyle.fr</a></p>
             <p><strong>Adresse :</strong> 41350 Huisseau-sur-Cosson</p>
             <p><strong>Horaires :</strong><br />Lun–Ven : 08:00–18:00</p>
+          </section>
+
+          <section class="contact-form-section" aria-label="Formulaire de contact">
+            <div class="contact-form-wrap">
+              <form class="contact-form" action="/send-mail.php" method="post" novalidate>
+                <label for="name">Nom</label>
+                <input id="name" name="name" type="text" required placeholder="Votre nom" />
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required placeholder="Votre email" />
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required placeholder="Décrivez votre besoin"></textarea>
+                <p>Nous vous répondrons dans les plus brefs délais.</p>
+                <button type="submit" class="cta">Envoyer</button>
+              </form>
+            </div>
+          </section>
+          <section>
             <div class="intervention-section" aria-label="Zone d'intervention">
               <h3>Zone d'intervention</h3>
               <p>Nous intervenons principalement dans les communes suivantes :</p>
@@ -87,7 +107,7 @@
                 <li>Vineuil</li>
               </ul>
             </div>
-          </aside>
+          </section>
         </div>
       </section>
     </main>
@@ -98,7 +118,7 @@
         <div class="footer-highlight" id="contact">
           <h3>Un projet en tête à Blois et ses environs ? Électrique ou métallique, la solution en un clic</h3>
           <address>
-            <a class="footer-cta" href="mailto:labrette.geoffrey@hotmail.fr">Contactez-nous</a>
+            <a class="footer-cta" href="mailto:contact@aferdestyle.fr">Contactez-nous</a>
           </address>
         </div>
         <nav class="footer-nav" aria-label="Liens de pied de page">

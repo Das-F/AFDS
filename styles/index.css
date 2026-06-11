@@ -81,7 +81,7 @@ nav {
   background: #274c77;
   display: flex;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
   margin: 0 auto;
   align-items: center;
   padding: 10px;
@@ -1056,7 +1056,7 @@ h4 {
     background: #274c77;
     display: flex;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
     align-items: center;
     padding: 10px;
