@@ -40,8 +40,8 @@
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": "47.6087763498271",
-              "longitude": "1.47153697554106"
+              "latitude": 47.6087763498271,
+              "longitude": 1.47153697554106
             },
             "serviceArea": [
               { "@type": "Place", "name": "Blois" },
@@ -65,64 +65,105 @@
             "founder": {
               "@id": "https://aferdestyle.fr/#person"
             },
-            "makesOffer": [
-              {
-                "@type": "Service",
-                "name": "Serrurerie",
-                "description": "Installation, maintenance et dépannage de serrures.",
-                "url": "https://aferdestyle.fr/services/serrurerie/",
-                "image": "https://aferdestyle.fr/assets/nos-realisations/serrurerie/Serrurerie-005.jpg",
-                "hasOfferCatalog": {
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Catalogue des prestations A Fer De Style",
+              "itemListElement": [
+                {
                   "@type": "OfferCatalog",
-                  "name": "Prestations Serrurerie",
+                  "name": "Serrurerie",
                   "itemListElement": [
-                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Installation de serrures" } },
-                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Réparation de serrures" } },
-                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mise en sécurité domicile ou entreprise" } }
-                  ]
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Service",
+                        "name": "Installation de serrures",
+                        "description": "Installation, maintenance et dépannage de serrures.",
+                        "url": "https://aferdestyle.fr/services/serrurerie/"
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Service",
+                        "name": "Réparation de serrures"
                 }
               },
               {
+                      "@type": "Offer",
+                      "itemOffered": {
                 "@type": "Service",
-                "name": "Électricité",
-                "description": "Travaux électriques neufs, rénovation et dépannage.",
-                "url": "https://aferdestyle.fr/services/electricite/",
-                "image": "https://aferdestyle.fr/assets/nos-realisations/electricite/Electricite-004.jpg",
-                "hasOfferCatalog": {
+                        "name": "Mise en sécurité domicile ou entreprise"
+                      }
+                    }
+                  ]
+                },
+                {
                   "@type": "OfferCatalog",
-                  "name": "Prestations Électricité",
+                  "name": "Électricité",
                   "itemListElement": [
-                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mise aux normes électriques" } },
-                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Installation systèmes d’éclairage" } },
-                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dépannage et réparations" } }
-                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Remplacement tableau électrique" } }
-
-                    ]
-                }
-              },
-              {
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Service",
+                        "name": "Mise aux normes électriques",
+                        "description": "Travaux électriques neufs, rénovation et dépannage.",
+                        "url": "https://aferdestyle.fr/services/electricite/"
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Service",
+                        "name": "Installation systèmes d’éclairage"
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
                 "@type": "Service",
-                "name": "Automatismes",
-                "description": "Installation et maintenance de systèmes motorisés.",
-                "url": "https://aferdestyle.fr/services/automatisme/",
-                "image": "https://aferdestyle.fr/assets/nos-realisations/automatisme/Automatisme-001.jpg",
-                "hasOfferCatalog": {
+                        "name": "Dépannage et réparations"
+                      }
+                    }
+                  ]
+                },
+                {
                   "@type": "OfferCatalog",
-                  "name": "Prestations Automatismes",
+                  "name": "Automatismes",
                   "itemListElement": [
-                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Portails motorisés" } },
-                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Portes de garage automatiques" } },
-                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Volets et rideaux métalliques motorisés" } }
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Service",
+                        "name": "Portails motorisés",
+                        "description": "Installation et maintenance de systèmes motorisés.",
+                        "url": "https://aferdestyle.fr/services/automatisme/"
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Service",
+                        "name": "Portes de garage automatiques"
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Service",
+                        "name": "Volets et rideaux métalliques motorisés"
+                      }
+                    }
                   ]
                 }
+              ]
               }
-            ]
           },
           {
             "@type": "Person",
             "@id": "https://aferdestyle.fr/#person",
             "name": "Geoffrey Labrette",
-            "jobTitle": "Gérant / Artisan électricien, automaticien et serrurier",
+            "jobTitle": "Gérant / Artisan Électricien, automaticien et serrurier",
             "url": "https://aferdestyle.fr",
             "worksFor": {
               "@id": "https://aferdestyle.fr/#localbusiness"
