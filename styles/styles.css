@@ -681,8 +681,9 @@ h4 {
 }
 
 .social-media-icon {
-  width: 25px;
-  height: 25px;
+  height: 24px;
+  width: auto;
+  display: block;
 }
 
 .social-list {
